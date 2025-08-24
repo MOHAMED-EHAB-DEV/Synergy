@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 import { Switch } from "./ui/switch";
 import { Check, Star, Zap, Crown } from "lucide-react";
 import { useState } from "react";
-import { motion } from "motion/react";
+import { motion, type Variants } from "motion/react";
 
 const plans = [
   {
@@ -63,7 +63,7 @@ const plans = [
   }
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -73,7 +73,7 @@ const containerVariants = {
   }
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 50, scale: 0.9 },
   visible: {
     opacity: 1,
